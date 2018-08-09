@@ -18,10 +18,7 @@ end
 
 def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0 
-  while i < cheese_types.length
-    food.find do |item|
-      if item === cheese_types[i]
-        return "#{item}"
-  end
+  food.find do |item|
+    if item === cheese_types
+      return "#{item}"
 end
